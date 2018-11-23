@@ -1,0 +1,26 @@
+<!--pages/navigate/navigate.wxml-->
+
+
+<view class="container">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style='width:100%;height:90%'>
+    <block wx:for="{{list}}" wx:key="{{index}}">
+      <swiper-item>
+        <view class='img_tit'>
+          <text>
+    {{item.title?item.title:"作者很懒无标题"}}
+    </text>
+        </view>
+        <image src='{{"https://photo.tuchong.com/"+item.images[0].user_id +"/f/"+item.images[0].img_id+".jpg"}}' class="slide-image" width="355" height="150"></image>
+        <view class='img_describe'>
+         <view>多少人喜爱:<text>{{item.favorites}}</text></view> 
+         <view>多少人评论:<text>{{item.comments}}</text></view>
+         <view>发表日期:<text>{{item.published_at}}</text></view>
+         <view>作者信息:<text>{{item.site.name}}</text></view>
+         <view>作者个签:<text>{{item.site.description}}</text></view>
+         <view>粉丝数量:<text>{{item.site.followers}}</text></view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <button type='default' bindtap='nextpage'>下一页</button>
+</view>

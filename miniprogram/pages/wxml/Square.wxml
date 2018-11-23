@@ -1,0 +1,8 @@
+<template name="S"  >
+  <view style='background:{{color}};color:#fff;width:100rpx;height:100rpx;text-align:center;line-height:100rpx;'>
+     <text>{{color}}</text>
+  </view>
+  
+</template>
+
+ 

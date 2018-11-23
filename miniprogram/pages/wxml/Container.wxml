@@ -1,0 +1,14 @@
+<import src="Square.wxml" />
+
+<template name="cont">
+  <view
+  style='display:flex;justify-content:space-between'
+  >
+    <template is="S" data="{{color: '#f00'}}" />
+    <template is="S" data="{{color: '#f0f'}}" />
+    <template is="S" data="{{color: '#00f'}}" />
+    <template is="S" data="{{color: '#000'}}" />
+  </view>
+
+
+</template>

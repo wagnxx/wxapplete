@@ -1,0 +1,13 @@
+/* pages/wxml/index.wxss */
+.hover{
+  background-color: gray;
+
+}
+
+.navigator-hover {
+  color:blue;
+}
+/** 自定义其他点击态样式类 **/
+.other-navigator-hover {
+  color:red;
+}

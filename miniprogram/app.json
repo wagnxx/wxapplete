@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/wxml/index",
+    "pages/navigate/navigate",
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+    
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#eb4f38",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath":"pages/wxml/index",
+        "text": "首页",
+        "iconPath": "images/wordN.png",
+        "selectedIconPath": "images/wordS.png"
+      },
+      {
+        "pagePath": "pages/navigate/navigate",
+        "text": "产品页",
+        "iconPath": "images/imageN.png",
+        "selectedIconPath": "images/imageS.png"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "text": "登陆",
+        "iconPath": "images/voiceN.png",
+        "selectedIconPath": "images/voiceS.png"
+      }
+
+ 
+    ]
+  }
+}

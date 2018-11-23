@@ -1,0 +1,11 @@
+<!--pages/wxml/index.wxml-->
+<import src="A.wxml" />
+<import src="Container.wxml" />
+
+<text style='font-size:30rpx;color:#555;'>{{time}}</text>
+<view wx:if="{{condition}}"> 
+<map latitude="39.92" longtitude="116.46"></map>
+ 
+
+
+</view>
