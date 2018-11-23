@@ -1,0 +1,16 @@
+<!--miniprogram/pages/MyInfo/MyInfo.wxml-->
+<import src="../../component/info/Info.wxml" />
+
+<view class='inof'>
+
+  <template is="InfoHeader" />
+  <!-- <view class='infoList_con' wx:for="{{infoList}}">
+    <template is="InfoList" data="{{...item}}" bindTab="clickInfoItem"/>
+  </view> -->
+  <view wx:for="{{infoList}}">
+
+    <info-list name="{{item.name}}" bind:checkedItem="checkedItem"></info-list>
+
+  </view>
+
+</view>

@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/wxml/index",
+    "pages/login/login",
+    "pages/index/index",
     "pages/navigate/navigate",
-    "pages/login/login"
+    "pages/MyInfo/MyInfo"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -10,7 +11,6 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
-    
   },
   "tabBar": {
     "color": "#000",
@@ -19,7 +19,7 @@
     "backgroundColor": "#fff",
     "list": [
       {
-        "pagePath":"pages/wxml/index",
+        "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "images/wordN.png",
         "selectedIconPath": "images/wordS.png"
@@ -32,12 +32,10 @@
       },
       {
         "pagePath": "pages/login/login",
-        "text": "登陆",
+        "text": "我的",
         "iconPath": "images/voiceN.png",
         "selectedIconPath": "images/voiceS.png"
       }
-
- 
     ]
   }
 }

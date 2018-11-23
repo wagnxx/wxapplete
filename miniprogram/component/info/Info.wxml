@@ -1,0 +1,18 @@
+<import src="Info.wxss" />
+
+<template name="InfoHeader">
+  <view class='info_header'>
+    <image src="../../images/xcx.jpg"></image>
+    <view class='info_name'>
+      隔壁小哥
+    </view>
+  </view>
+</template>
+
+<template name="InfoList">
+  <view class='info_list' bindtap='clickInfoItem'>
+    <view class='info_listName'> {{name}}</view>
+    <image class='info_listCont' src="../../images/array-r.png">
+    </image>
+  </view>
+</template>

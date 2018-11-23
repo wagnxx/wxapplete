@@ -11,5 +11,9 @@ App({
     }
 
     this.globalData = {}
+  },
+  data:{
+    login:false,
+    from:""
   }
 })

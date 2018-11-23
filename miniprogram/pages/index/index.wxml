@@ -1,10 +1,22 @@
 <!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+ 
+<view class="app">
+  <view class='imgList'>
+    <view class='item' wx:for="{{list}}" >
+
+      <view class='img_area'> 
+      <image src='{{"https://photo.tuchong.com/"+item.images[0].user_id +"/f/"+item.images[0].img_id+".jpg"}}'></image>
+      </view>
+      <view class='img_des'>
+        <view>主题：<text>{{item.title}}</text></view>
+        <view>作者：<text>{{item.site.name}}</text></view>
+        <view>创建时间：<text>{{item.passed_time}}</text></view>
+        <view class='tags'>
+           标签：<text  wx:for="{{item.tags}}">{{item}}</text>
+        </view>
+      </view>
+
+    </view>
+
   </view>
 </view>

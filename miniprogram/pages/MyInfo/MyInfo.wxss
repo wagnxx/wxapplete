@@ -1,0 +1,17 @@
+/* miniprogram/pages/MyInfo/MyInfo.wxss */
+.info_header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgba(21, 120, 133, 0.384);
+  padding: 30rpx 20rpx;
+ 
+}
+.info_header image{width: 100rpx;height: 100rpx;border-radius: 100%}
+.info_header .info_name{color: #666;margin-left: 20rpx;}
+/* // info_list */
+
+.info_list{display: flex;justify-content: space-between;border-top: 1px solid #f5f5f5;border-bottom: 1rpx solid #f5f5f5;padding:30rpx 20rpx;align-items: center;margin-top: 10px;}
+.info_list:first-child{border-top: 1px solid #f5f5f5;}
+.info_list .info_listName{color: #555;}
+.info_list .info_listCont{width: 35rpx;height: 35rpx;}

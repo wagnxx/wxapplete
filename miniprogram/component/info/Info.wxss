@@ -1,0 +1,5 @@
+.InfoHeader{
+  display: flex;
+}
+.info_header image{width: 100rpx;height: 100rpx;}
+.info_header .info_name{color: #f00;}
